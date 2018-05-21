@@ -27,7 +27,6 @@ class Scheme: NSObject {
         }
         if let fifthL = fifthLine {
             self.schemeName = self.schemeName + "-\(String(describing: fifthL))"
-            
         }
     }
 }
