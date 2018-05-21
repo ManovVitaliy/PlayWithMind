@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FootballPlayerCell" id="gTV-IL-0wX" customClass="FootballPlayerCollectionViewCell" customModule="CollectionViewFlowLayoutTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="60"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultPlayer.png" translatesAutoresizingMaskIntoConstraints="NO" id="1bz-Bv-bhb">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DEF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ULd-cu-S8F">
+                        <rect key="frame" x="0.0" y="50" width="25" height="10"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="82" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ubr-wi-EFD">
+                        <rect key="frame" x="25" y="50" width="25" height="10"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="ULd-cu-S8F" firstAttribute="top" secondItem="1bz-Bv-bhb" secondAttribute="bottom" id="7Re-nU-ZJX"/>
+                <constraint firstItem="ULd-cu-S8F" firstAttribute="width" secondItem="1bz-Bv-bhb" secondAttribute="width" multiplier="0.5" id="AAk-EW-SIC"/>
+                <constraint firstItem="Ubr-wi-EFD" firstAttribute="top" secondItem="1bz-Bv-bhb" secondAttribute="bottom" id="ANh-U0-Izk"/>
+                <constraint firstAttribute="trailing" secondItem="Ubr-wi-EFD" secondAttribute="trailing" id="Aqa-UO-qep"/>
+                <constraint firstItem="ULd-cu-S8F" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="IxW-eN-CHG"/>
+                <constraint firstAttribute="bottom" secondItem="ULd-cu-S8F" secondAttribute="bottom" id="TQj-7i-VLn"/>
+                <constraint firstAttribute="bottom" secondItem="Ubr-wi-EFD" secondAttribute="bottom" id="VsY-LT-ZH3"/>
+                <constraint firstItem="Ubr-wi-EFD" firstAttribute="leading" secondItem="ULd-cu-S8F" secondAttribute="trailing" id="Yzm-e7-cH0"/>
+                <constraint firstItem="1bz-Bv-bhb" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ljX-VQ-0zP"/>
+                <constraint firstAttribute="trailing" secondItem="1bz-Bv-bhb" secondAttribute="trailing" id="mDE-vi-e3j"/>
+                <constraint firstAttribute="bottom" secondItem="1bz-Bv-bhb" secondAttribute="bottom" constant="10" id="pok-n0-Sgt"/>
+                <constraint firstItem="1bz-Bv-bhb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="qad-oI-sF7"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="50" height="60"/>
+            <point key="canvasLocation" x="25" y="57"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="defaultPlayer.png" width="80" height="80"/>
+    </resources>
+</document>
