@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -35,7 +36,7 @@
                                         </constraints>
                                         <state key="normal" image="back-button.png"/>
                                         <connections>
-                                            <action selector="backButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VqO-Zc-uDJ"/>
+                                            <action selector="backButtonHomeTeamTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vg2-fz-I75"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HpW-fR-Sgj">
@@ -45,7 +46,7 @@
                                         </constraints>
                                         <state key="normal" image="next-button.png"/>
                                         <connections>
-                                            <action selector="nextButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wUO-Fs-rJW"/>
+                                            <action selector="nextButtonHomeTeamTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="83W-1T-7p9"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -63,9 +64,64 @@
                                 </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="j1o-na-gC8">
-                                <rect key="frame" x="0.0" y="70" width="375" height="597"/>
+                                <rect key="frame" x="0.0" y="70" width="375" height="273.5"/>
                                 <color key="backgroundColor" red="0.1843137255" green="0.78823529410000004" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CQY-6p-0J7">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eb6-Cy-Q46">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scheme" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pFy-Wl-wF5">
+                                        <rect key="frame" x="156" y="15" width="62.5" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cWr-mk-HEi">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="cWr-mk-HEi" secondAttribute="height" multiplier="1:1" id="DHM-17-csc"/>
+                                        </constraints>
+                                        <state key="normal" image="back-button.png"/>
+                                        <connections>
+                                            <action selector="backButtonAwayTeamTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qjs-IJ-cm8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wAN-zL-60c">
+                                        <rect key="frame" x="325" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="wAN-zL-60c" secondAttribute="height" multiplier="1:1" id="w9H-gy-Tz9"/>
+                                        </constraints>
+                                        <state key="normal" image="next-button.png"/>
+                                        <connections>
+                                            <action selector="nextButtonAwayTeamTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3GY-Px-P0D"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="cWr-mk-HEi" secondAttribute="trailing" constant="20" symbolic="YES" id="0yO-3A-Zeu"/>
+                                    <constraint firstAttribute="height" constant="50" id="9Bd-4o-6GL"/>
+                                    <constraint firstAttribute="trailing" secondItem="wAN-zL-60c" secondAttribute="trailing" id="Bfr-tB-xdc"/>
+                                    <constraint firstAttribute="bottom" secondItem="cWr-mk-HEi" secondAttribute="bottom" id="CNa-5f-Z8T"/>
+                                    <constraint firstAttribute="bottom" secondItem="wAN-zL-60c" secondAttribute="bottom" id="eyP-Lb-2Zi"/>
+                                    <constraint firstItem="cWr-mk-HEi" firstAttribute="leading" secondItem="eb6-Cy-Q46" secondAttribute="leading" id="jfY-ue-zuK"/>
+                                    <constraint firstItem="cWr-mk-HEi" firstAttribute="top" secondItem="eb6-Cy-Q46" secondAttribute="top" id="q5P-cw-jrg"/>
+                                    <constraint firstItem="pFy-Wl-wF5" firstAttribute="centerY" secondItem="eb6-Cy-Q46" secondAttribute="centerY" id="rz6-7f-0es"/>
+                                    <constraint firstItem="pFy-Wl-wF5" firstAttribute="centerX" secondItem="eb6-Cy-Q46" secondAttribute="centerX" id="tYz-xW-TSz"/>
+                                    <constraint firstItem="wAN-zL-60c" firstAttribute="top" secondItem="eb6-Cy-Q46" secondAttribute="top" id="u1K-Rj-UaP"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Fgu-tL-Aaw">
+                                <rect key="frame" x="0.0" y="343.5" width="375" height="273.5"/>
+                                <color key="backgroundColor" red="1" green="0.060283052730000002" blue="0.1260591781" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vaV-3z-sy6">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -77,18 +133,27 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="7YZ-cu-VJf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2ff-wb-c6D"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Fgu-tL-Aaw" secondAttribute="trailing" id="7bK-vl-Cbv"/>
+                            <constraint firstItem="eb6-Cy-Q46" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Bbn-wQ-UOv"/>
+                            <constraint firstItem="Fgu-tL-Aaw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="T2U-g7-ARY"/>
+                            <constraint firstItem="Fgu-tL-Aaw" firstAttribute="top" secondItem="j1o-na-gC8" secondAttribute="bottom" id="WWe-M3-bIN"/>
                             <constraint firstItem="j1o-na-gC8" firstAttribute="top" secondItem="7YZ-cu-VJf" secondAttribute="bottom" id="YVl-bM-pPS"/>
-                            <constraint firstItem="j1o-na-gC8" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="cqA-ip-9R7"/>
                             <constraint firstItem="j1o-na-gC8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="duS-MN-raj"/>
+                            <constraint firstItem="eb6-Cy-Q46" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ep5-CK-gGC"/>
                             <constraint firstItem="7YZ-cu-VJf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="kAl-Hb-wmg"/>
                             <constraint firstItem="7YZ-cu-VJf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="kur-Wv-414"/>
                             <constraint firstItem="j1o-na-gC8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="oIZ-8w-Qeo"/>
+                            <constraint firstItem="eb6-Cy-Q46" firstAttribute="top" secondItem="Fgu-tL-Aaw" secondAttribute="bottom" id="rpg-Do-UAn"/>
+                            <constraint firstItem="eb6-Cy-Q46" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="t9R-aE-2zk"/>
+                            <constraint firstItem="j1o-na-gC8" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" constant="-60" id="yJN-r7-Tfv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="collectionView" destination="j1o-na-gC8" id="JM9-BQ-Emp"/>
-                        <outlet property="schemeNameLabel" destination="sSn-KZ-Nmu" id="8lQ-1E-JBP"/>
+                        <outlet property="awayTeamCollectionView" destination="Fgu-tL-Aaw" id="jPS-Ej-bdA"/>
+                        <outlet property="awayTeamSchemeNameLabel" destination="pFy-Wl-wF5" id="m1S-O6-yik"/>
+                        <outlet property="homeTeamCollectionView" destination="j1o-na-gC8" id="JM9-BQ-Emp"/>
+                        <outlet property="homeTeamSchemeNameLabel" destination="sSn-KZ-Nmu" id="8lQ-1E-JBP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
