@@ -24,7 +24,7 @@ class FootballTeamSchemeViewController: UIViewController, UICollectionViewDataSo
     // constants
     private let cellIdentifier = "FootballPlayerCell"
     private let navigationBarTitle = "Main Screen"
-    private let sizeKoeff: CGFloat = 0.98
+    private let sizeKoeff: CGFloat = 0.99
     
     private var homeTeamSchemesArray: [Scheme] = [Scheme]()
     private var awayTeamSchemesArray: [Scheme] = [Scheme]()
@@ -143,7 +143,7 @@ class FootballTeamSchemeViewController: UIViewController, UICollectionViewDataSo
         
         let cellWidth = width
         var cellCount: Int = 1
-        let cellSpacing = 15.0
+        let cellSpacing = 10.0
         
         if (collectionView == self.homeTeamCollectionView) {
             switch section {
@@ -195,7 +195,7 @@ class FootballTeamSchemeViewController: UIViewController, UICollectionViewDataSo
         let leftInset = (self.homeTeamCollectionView!.frame.size.width - CGFloat(totalCellWidth + totalSpacingWidth)) / 2
         let rightInset = leftInset
         
-        return UIEdgeInsetsMake(0, leftInset, 0, rightInset)
+        return UIEdgeInsetsMake(0, leftInset * sizeKoeff, 0, rightInset * sizeKoeff)
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
