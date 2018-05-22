@@ -18,6 +18,7 @@
 		CE274D6620B2BF1900D05057 /* FootballTeamSchemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE274D6520B2BF1900D05057 /* FootballTeamSchemeViewController.swift */; };
 		CE274D6820B2C29400D05057 /* defaultPlayer.png in Resources */ = {isa = PBXBuildFile; fileRef = CE274D6720B2C29400D05057 /* defaultPlayer.png */; };
 		CE274D6C20B2D33400D05057 /* Scheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE274D6B20B2D33400D05057 /* Scheme.swift */; };
+		CE35B84C20B4493900A51B44 /* History.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE35B84B20B4493900A51B44 /* History.storyboard */; };
 		CE46FE5820B4203200A515BD /* football-field.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE46FE5720B4203100A515BD /* football-field.jpg */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		CE274D6520B2BF1900D05057 /* FootballTeamSchemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballTeamSchemeViewController.swift; sourceTree = "<group>"; };
 		CE274D6720B2C29400D05057 /* defaultPlayer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaultPlayer.png; sourceTree = "<group>"; };
 		CE274D6B20B2D33400D05057 /* Scheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scheme.swift; sourceTree = "<group>"; };
+		CE35B84B20B4493900A51B44 /* History.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = History.storyboard; sourceTree = "<group>"; };
 		CE46FE5720B4203100A515BD /* football-field.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "football-field.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,10 +70,10 @@
 		CE274D4620B2B7D600D05057 /* CollectionViewFlowLayoutTest */ = {
 			isa = PBXGroup;
 			children = (
+				CE35B84A20B448F000A51B44 /* Storyboards */,
 				CE274D5E20B2BC6F00D05057 /* FootballTeamSchemeModule */,
 				CE274D5920B2BA5400D05057 /* Resource */,
 				CE274D4720B2B7D600D05057 /* AppDelegate.swift */,
-				CE274D4B20B2B7D600D05057 /* Main.storyboard */,
 				CE274D4E20B2B7D800D05057 /* Assets.xcassets */,
 				CE274D5020B2B7D800D05057 /* LaunchScreen.storyboard */,
 				CE274D5320B2B7D800D05057 /* Info.plist */,
@@ -131,6 +133,15 @@
 				CE274D6B20B2D33400D05057 /* Scheme.swift */,
 			);
 			path = Scheme;
+			sourceTree = "<group>";
+		};
+		CE35B84A20B448F000A51B44 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CE274D4B20B2B7D600D05057 /* Main.storyboard */,
+				CE35B84B20B4493900A51B44 /* History.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +210,7 @@
 				CE46FE5820B4203200A515BD /* football-field.jpg in Resources */,
 				CE274D5C20B2BABF00D05057 /* next-button.png in Resources */,
 				CE274D4D20B2B7D600D05057 /* Main.storyboard in Resources */,
+				CE35B84C20B4493900A51B44 /* History.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
