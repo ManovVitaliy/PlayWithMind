@@ -63,17 +63,6 @@
                                     <constraint firstAttribute="bottom" secondItem="HpW-fR-Sgj" secondAttribute="bottom" id="wgb-cO-58w"/>
                                 </constraints>
                             </view>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="j1o-na-gC8">
-                                <rect key="frame" x="0.0" y="70" width="375" height="273.5"/>
-                                <color key="backgroundColor" red="0.1843137255" green="0.78823529410000004" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CQY-6p-0J7">
-                                    <size key="itemSize" width="50" height="50"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells/>
-                            </collectionView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eb6-Cy-Q46">
                                 <rect key="frame" x="0.0" y="617" width="375" height="50"/>
                                 <subviews>
@@ -118,9 +107,23 @@
                                     <constraint firstItem="wAN-zL-60c" firstAttribute="top" secondItem="eb6-Cy-Q46" secondAttribute="top" id="u1K-Rj-UaP"/>
                                 </constraints>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="football-field.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="yn9-Uv-eG1">
+                                <rect key="frame" x="0.0" y="70" width="375" height="547"/>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="j1o-na-gC8">
+                                <rect key="frame" x="0.0" y="70" width="375" height="273.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CQY-6p-0J7">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Fgu-tL-Aaw">
                                 <rect key="frame" x="0.0" y="343.5" width="375" height="273.5"/>
-                                <color key="backgroundColor" red="1" green="0.060283052730000002" blue="0.1260591781" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vaV-3z-sy6">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -132,20 +135,24 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="yn9-Uv-eG1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0fG-Pg-tBF"/>
+                            <constraint firstItem="j1o-na-gC8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1gh-3C-FLw"/>
                             <constraint firstItem="7YZ-cu-VJf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2ff-wb-c6D"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Fgu-tL-Aaw" secondAttribute="trailing" id="7bK-vl-Cbv"/>
                             <constraint firstItem="eb6-Cy-Q46" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Bbn-wQ-UOv"/>
-                            <constraint firstItem="Fgu-tL-Aaw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="T2U-g7-ARY"/>
-                            <constraint firstItem="Fgu-tL-Aaw" firstAttribute="top" secondItem="j1o-na-gC8" secondAttribute="bottom" id="WWe-M3-bIN"/>
-                            <constraint firstItem="j1o-na-gC8" firstAttribute="top" secondItem="7YZ-cu-VJf" secondAttribute="bottom" id="YVl-bM-pPS"/>
-                            <constraint firstItem="j1o-na-gC8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="duS-MN-raj"/>
+                            <constraint firstItem="Fgu-tL-Aaw" firstAttribute="height" secondItem="yn9-Uv-eG1" secondAttribute="height" multiplier="0.5" id="RjI-aQ-uWb"/>
+                            <constraint firstItem="j1o-na-gC8" firstAttribute="top" secondItem="7YZ-cu-VJf" secondAttribute="bottom" id="SOq-UV-ov8"/>
+                            <constraint firstItem="yn9-Uv-eG1" firstAttribute="top" secondItem="7YZ-cu-VJf" secondAttribute="bottom" id="d6m-4R-q4f"/>
                             <constraint firstItem="eb6-Cy-Q46" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ep5-CK-gGC"/>
+                            <constraint firstItem="Fgu-tL-Aaw" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="f5c-xa-hJA"/>
+                            <constraint firstItem="eb6-Cy-Q46" firstAttribute="top" secondItem="Fgu-tL-Aaw" secondAttribute="bottom" id="gc4-fO-yX2"/>
                             <constraint firstItem="7YZ-cu-VJf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="kAl-Hb-wmg"/>
                             <constraint firstItem="7YZ-cu-VJf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="kur-Wv-414"/>
-                            <constraint firstItem="j1o-na-gC8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="oIZ-8w-Qeo"/>
-                            <constraint firstItem="eb6-Cy-Q46" firstAttribute="top" secondItem="Fgu-tL-Aaw" secondAttribute="bottom" id="rpg-Do-UAn"/>
+                            <constraint firstItem="j1o-na-gC8" firstAttribute="height" secondItem="yn9-Uv-eG1" secondAttribute="height" multiplier="0.5" id="n0u-HR-1Bh"/>
+                            <constraint firstItem="j1o-na-gC8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="nAV-Mx-M0w"/>
+                            <constraint firstItem="eb6-Cy-Q46" firstAttribute="top" secondItem="yn9-Uv-eG1" secondAttribute="bottom" id="t0R-6p-Gvl"/>
                             <constraint firstItem="eb6-Cy-Q46" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="t9R-aE-2zk"/>
-                            <constraint firstItem="j1o-na-gC8" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" constant="-60" id="yJN-r7-Tfv"/>
+                            <constraint firstItem="Fgu-tL-Aaw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xXv-UO-uwd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yn9-Uv-eG1" secondAttribute="trailing" id="zJD-4Z-3l2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -163,6 +170,7 @@
     </scenes>
     <resources>
         <image name="back-button.png" width="30" height="30"/>
+        <image name="football-field.jpg" width="300" height="450"/>
         <image name="next-button.png" width="30" height="30"/>
     </resources>
 </document>

@@ -23,6 +23,7 @@ class FootballTeamSchemeViewController: UIViewController, UICollectionViewDataSo
     
     // constants
     private let cellIdentifier = "FootballPlayerCell"
+    private let sizeKoeff: CGFloat = 0.98
     
     private var homeTeamSchemesArray: [Scheme] = [Scheme]()
     private var awayTeamSchemesArray: [Scheme] = [Scheme]()
@@ -112,13 +113,13 @@ class FootballTeamSchemeViewController: UIViewController, UICollectionViewDataSo
         if (collectionView == self.homeTeamCollectionView) {
             let numberOfLines: Int = self.homeTeamCurrentScheme.fifthLine != nil ? 5 : 4
             let height: CGFloat = self.homeTeamCollectionView.frame.height / (CGFloat(numberOfLines))
-            let size: CGSize = CGSize(width: 0.99 * height * 5 / 6, height: 0.99 * height)
+            let size: CGSize = CGSize(width: sizeKoeff * height * 5 / 6, height: sizeKoeff * height)
             
             return size
         } else {
             let numberOfLines: Int = self.awayTeamCurrentScheme.fifthLine != nil ? 5 : 4
             let height: CGFloat = self.awayTeamCollectionView.frame.height / (CGFloat(numberOfLines))
-            let size: CGSize = CGSize(width: 0.99 * height * 5 / 6, height: 0.99 * height)
+            let size: CGSize = CGSize(width: sizeKoeff * height * 5 / 6, height: sizeKoeff * height)
             
             return size
         }

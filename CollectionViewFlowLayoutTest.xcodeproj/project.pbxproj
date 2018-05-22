@@ -18,6 +18,7 @@
 		CE274D6620B2BF1900D05057 /* FootballTeamSchemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE274D6520B2BF1900D05057 /* FootballTeamSchemeViewController.swift */; };
 		CE274D6820B2C29400D05057 /* defaultPlayer.png in Resources */ = {isa = PBXBuildFile; fileRef = CE274D6720B2C29400D05057 /* defaultPlayer.png */; };
 		CE274D6C20B2D33400D05057 /* Scheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE274D6B20B2D33400D05057 /* Scheme.swift */; };
+		CE46FE5820B4203200A515BD /* football-field.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE46FE5720B4203100A515BD /* football-field.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		CE274D6520B2BF1900D05057 /* FootballTeamSchemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballTeamSchemeViewController.swift; sourceTree = "<group>"; };
 		CE274D6720B2C29400D05057 /* defaultPlayer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaultPlayer.png; sourceTree = "<group>"; };
 		CE274D6B20B2D33400D05057 /* Scheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scheme.swift; sourceTree = "<group>"; };
+		CE46FE5720B4203100A515BD /* football-field.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "football-field.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 		CE274D5920B2BA5400D05057 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				CE46FE5720B4203100A515BD /* football-field.jpg */,
 				CE274D6720B2C29400D05057 /* defaultPlayer.png */,
 				CE274D5B20B2BABF00D05057 /* back-button.png */,
 				CE274D5A20B2BABE00D05057 /* next-button.png */,
@@ -193,6 +196,7 @@
 				CE274D5D20B2BABF00D05057 /* back-button.png in Resources */,
 				CE274D6420B2BDF000D05057 /* FootballPlayerCollectionViewCell.xib in Resources */,
 				CE274D4F20B2B7D800D05057 /* Assets.xcassets in Resources */,
+				CE46FE5820B4203200A515BD /* football-field.jpg in Resources */,
 				CE274D5C20B2BABF00D05057 /* next-button.png in Resources */,
 				CE274D4D20B2B7D600D05057 /* Main.storyboard in Resources */,
 			);
