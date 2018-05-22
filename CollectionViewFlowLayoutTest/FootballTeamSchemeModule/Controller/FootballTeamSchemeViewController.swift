@@ -23,6 +23,7 @@ class FootballTeamSchemeViewController: UIViewController, UICollectionViewDataSo
     
     // constants
     private let cellIdentifier = "FootballPlayerCell"
+    private let navigationBarTitle = "Main Screen"
     private let sizeKoeff: CGFloat = 0.98
     
     private var homeTeamSchemesArray: [Scheme] = [Scheme]()
@@ -30,8 +31,14 @@ class FootballTeamSchemeViewController: UIViewController, UICollectionViewDataSo
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setupNavigationBar()
         self.setupCollectionView()
         self.setupSchemesArray()
+    }
+    
+    private func setupNavigationBar() {
+        self.navigationController?.navigationBar.backgroundColor = UIColor.red
+        self.navigationItem.title = navigationBarTitle
     }
     
     private func setupCollectionView() {
