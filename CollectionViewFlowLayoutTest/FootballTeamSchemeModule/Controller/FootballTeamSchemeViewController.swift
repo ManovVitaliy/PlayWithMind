@@ -188,7 +188,6 @@ class FootballTeamSchemeViewController: UIViewController, UICollectionViewDataSo
         let rightInset = leftInset
         
         return UIEdgeInsetsMake(0, leftInset, 0, rightInset)
-        
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
