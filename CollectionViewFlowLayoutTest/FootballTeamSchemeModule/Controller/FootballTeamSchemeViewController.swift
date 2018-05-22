@@ -145,6 +145,7 @@ class FootballTeamSchemeViewController: UIViewController, UICollectionViewDataSo
         } else {
             return 4
         }
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
