@@ -24,7 +24,7 @@ class FootballTeamSchemeViewController: UIViewController, UICollectionViewDataSo
     // constants
     private let cellIdentifier = "FootballPlayerCell"
     private let navigationBarTitle = "Main Screen"
-    private let sizeKoeff: CGFloat = 0.99
+    private let sizeKoeff: CGFloat = 0.98
     
     private var homeTeamSchemesArray: [Scheme] = [Scheme]()
     private var awayTeamSchemesArray: [Scheme] = [Scheme]()

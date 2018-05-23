@@ -45,6 +45,10 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="teamImageView" destination="zJJ-BJ-Ub9" id="3uA-TA-Zil"/>
+                <outlet property="teamName" destination="doT-Nd-DWV" id="kJc-gO-vsH"/>
+            </connections>
             <point key="canvasLocation" x="25" y="60"/>
         </tableViewCell>
     </objects>
